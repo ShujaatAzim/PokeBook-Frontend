@@ -1,4 +1,8 @@
-import React from 'react';
+import rarityHolo from '/src/Data/Rarity_Rare_Holo.png';
+import rarityRare from '/src/Data/Rarity_Rare.png';
+import rarityUncommon from '/src/Data/Rarity_Uncommon.png';
+import rarityCommon from '/src/Data/Rarity_Common.png';
+
 
 export const setSymbols = {
   'Base Set': (
@@ -87,28 +91,8 @@ export const raritySymbols = {
       alt='secret rare symbol'
     />
   ),
-  holo: (
-    <img
-      src='src/Data/Rarity_Rare_Holo.png'
-      alt='holo symbol'
-    />
-  ),
-  rare: (
-    <img
-      src='src/Data/Rarity_Rare.png'
-      alt='rare symbol'
-    />
-  ),
-  uncommon: (
-    <img
-      src='src/Data/Rarity_Uncommon.png'
-      alt='uncommon symbol'
-    />
-  ),
-  common: (
-    <img
-      src='src/Data/Rarity_Common.png'
-      alt='common symbol'
-    />
-  ),
-};
+  holo: <img src={rarityHolo} alt='holo symbol' />,
+  rare: <img src={rarityRare} alt='rare symbol' />,
+  uncommon: <img src={rarityUncommon} alt='uncommon symbol' />,
+  common: <img src={rarityCommon} alt='common symbol' />,
+}
