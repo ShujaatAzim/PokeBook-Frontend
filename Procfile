@@ -1,1 +1,1 @@
-web: serve -s build -l 5000
+web: serve -s dist -l 5000

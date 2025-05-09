@@ -16,6 +16,7 @@
     "recoil": "^0.7.7",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
+    "serve": "^14.2.4",
     "sweetalert2": "^11.21.0"
   },
   "devDependencies": {
