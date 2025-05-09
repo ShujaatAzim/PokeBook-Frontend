@@ -105,6 +105,7 @@ const CollectionSharePage = (props) => {
               All
             </Button>
             <Button
+              style={{ height: "38.5px !important" }}
               circular
               toggle
               onClick={() => setRarity('holo')}

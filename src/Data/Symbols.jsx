@@ -91,8 +91,8 @@ export const raritySymbols = {
       alt='secret rare symbol'
     />
   ),
-  holo: <img src={rarityHolo} alt='holo symbol' />,
-  rare: <img src={rarityRare} alt='rare symbol' />,
-  uncommon: <img src={rarityUncommon} alt='uncommon symbol' />,
-  common: <img src={rarityCommon} alt='common symbol' />,
+  holo: <img height="11px" width="21px" src={rarityHolo} alt='holo symbol' />,
+  rare: <img height="12px" width="13px" src={rarityRare} alt='rare symbol' />,
+  uncommon: <img height="12px" width="11px" src={rarityUncommon} alt='uncommon symbol' />,
+  common: <img height="11px" width="11px" src={rarityCommon} alt='common symbol' />,
 }

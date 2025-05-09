@@ -14,3 +14,8 @@ export const setState = atom({
   key: 'set',
   default: 'base',
 });
+
+export const loading = atom({
+  key: 'loading',
+  default: false
+})

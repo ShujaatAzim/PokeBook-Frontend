@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, Dropdown } from 'semantic-ui-react';
 import { setSymbols } from '../Data/Symbols';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Card from '../Components/Card';
 import SetButtonsScreen from '../Components/SetButtonsScreen';
 import LoadingScreen from '../Components/LoadingScreen';
@@ -26,7 +26,6 @@ const HomePage = (props) => {
   }, []);
 
   const getCards = async () => {
-    console.log('Sending token:', creds.jwt);
     try {
       const resp = await fetch(`${url}/cards`, {
         method: 'GET',
@@ -66,85 +65,41 @@ const HomePage = (props) => {
     <div style={{ textAlign: 'center' }}>
       <div>
         <h1>
-          {setSymbols[set]} {set} {setSymbols[set]}
+          {set}
         </h1>
+        {setSymbols[set]}
+        <br />
         <br />
         <div>
           <div>
-            <Button
-              circular
-              toggle
-              onClick={() => setCardType('all')}
-              active={cardType === 'all'}
-            >
+            <Button circular toggle onClick={() => setCardType('all')} active={cardType === 'all'}>
               All
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setCardType('pokemon')}
-              active={cardType === 'pokemon'}
-            >
+            <Button circular toggle onClick={() => setCardType('pokemon')} active={cardType === 'pokemon'}>
               Pokemon
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setCardType('trainer')}
-              active={cardType === 'trainer'}
-            >
+            <Button circular toggle onClick={() => setCardType('trainer')} active={cardType === 'trainer'}>
               Trainer
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setCardType('energy')}
-              active={cardType === 'energy'}
-              disabled={set === 'Jungle'}
-            >
+            <Button circular toggle onClick={() => setCardType('energy')} active={cardType === 'energy'} disabled={set === 'Jungle'}>
               Energy
             </Button>
           </div>
           <br />
           <div>
-            <Button
-              circular
-              toggle
-              onClick={() => setRarity('all')}
-              active={rarity === 'all'}
-            >
+            <Button circular toggle onClick={() => setRarity('all')} active={rarity === 'all'}>
               All
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setRarity('holo')}
-              active={rarity === 'holo'}
-            >
+            <Button circular toggle onClick={() => setRarity('holo')} active={rarity === 'holo'}>
               {raritySymbols.holo}
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setRarity('rare')}
-              active={rarity === 'rare'}
-            >
+            <Button circular toggle onClick={() => setRarity('rare')} active={rarity === 'rare'}>
               {raritySymbols.rare}
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setRarity('uncommon')}
-              active={rarity === 'uncommon'}
-            >
+            <Button circular toggle onClick={() => setRarity('uncommon')} active={rarity === 'uncommon'}>
               {raritySymbols.uncommon}
             </Button>
-            <Button
-              circular
-              toggle
-              onClick={() => setRarity('common')}
-              active={rarity === 'common'}
-            >
+            <Button circular toggle onClick={() => setRarity('common')} active={rarity === 'common'}> 
               {raritySymbols.common}
             </Button>
           </div>
