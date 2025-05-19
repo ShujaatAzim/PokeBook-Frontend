@@ -27,6 +27,27 @@
   margin-right: 5%;
 }
 
+@media (max-width: 600px) {
+  .body {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .card:hover,
+  .show-card:hover {
+    transform: none;
+  }
+  
+  #set-button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .login-input {
+    width: 100%;
+  }
+}
+
 .footer {
   min-height: 5vh;
 }
@@ -42,7 +63,9 @@ body {
 }
 
 .login-input {
-  width: 60vw !important;
+  width: 100%;
+  max-width: 500px !important;
+  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
