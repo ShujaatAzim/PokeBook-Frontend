@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import CardModal from './CardModal';
 
 const Card = (props) => {
@@ -6,7 +6,7 @@ const Card = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <React.Fragment>
+    <Fragment>
       <img
         className='card'
         style={{
@@ -32,7 +32,7 @@ const Card = (props) => {
           a={props.a}
         />
       ) : null}
-    </React.Fragment>
+    </Fragment>
   );
 };
 
