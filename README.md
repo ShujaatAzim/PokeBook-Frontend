@@ -1,12 +1,27 @@
-# React + Vite
+# PokeBook
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+An app for tracking your retro/vintage Pokemon card collection! Add details such as quantity and a description to your cards, and easily share your collection with a link to a tamper-proof view page! Great for quickly showcasing what you have, whether to sell, indicate what you'd like to buy, or just showoff!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built as a fun project due to a gap in the seller market, where people would list out their collections manually on whatever platfrom they were using (reddit, ebay, etc). Received compliments from the reddit community!
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Edit card information such as quantity, descriptions, etc.
+- Filter displayed cards by set, rarity, type, or any combo.
+- Link to a read-only version of the site for ease of sharing collection.
+- FUTURE: adding more sets and ability to upload pics
+
+## Technologies Used
+
+Built in React (Vite)
+
+## To run locally:
+
+```bash
+# Example commands
+git clone <repository-url>
+cd <project-directory>
+npm install
+```
