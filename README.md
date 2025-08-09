@@ -25,3 +25,11 @@ git clone <repository-url>
 cd <project-directory>
 npm install
 ```
+
+## License
+
+## Shujaat Azim's Portfolio Page
+
+## License
+
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html#license-text)
